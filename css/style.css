@@ -1,0 +1,89 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-card {
+  max-width: 30rem;
+  padding: 5.2rem 4.5rem;
+}
+
+.icon {
+  margin-bottom: 2.4rem;
+  width: 5.2rem;
+}
+
+.product-heading {
+  font-family: "Big Shoulders Display", serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+.product-text {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  margin-bottom: 8rem;
+  line-height: 1.7;
+}
+
+.product-link:link,
+.product-link:visited {
+  text-decoration: none;
+  padding: 1.2rem 3.2rem;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.product-card--sedans .product-link:hover,
+.product-card--sedans .product-link:active {
+  box-shadow: 0 0 0 3px hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+
+.product-card--suvs .product-link:hover,
+.product-card--suvs .product-link:active {
+  box-shadow: 0 0 0 3px hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+
+.product-card--luxury .product-link:hover,
+.product-card--luxury .product-link:active {
+  box-shadow: 0 0 0 3px hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* SEDANS SECTION */
+.product-card--sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.product-link--sedans:link,
+.product-link--sedans:visited {
+  color: hsl(31, 77%, 52%);
+}
+
+/* SUVS SECTION */
+.product-card--suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.product-link--suvs:link,
+.product-link--suvs:visited {
+  color: hsl(184, 100%, 22%);
+}
+/* LUXURY SECTION */
+.product-card--luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.product-link--luxury:link,
+.product-link--luxury:visited {
+  color: hsl(179, 100%, 13%);
+}
